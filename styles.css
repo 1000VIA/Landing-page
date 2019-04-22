@@ -23,10 +23,6 @@ header {
     box-shadow: 0px 5px 5px grey;
 }
 
-h2 {
-    color: #ff0084;
-}
-
 #header-img {
     height: 100%;
 }
@@ -43,42 +39,31 @@ h2 {
     text-decoration: none;
 }
 
-@media (max-width: 850px) {
-    .hide-on-small {
-        display: none;
-    }
-}
-
 main {
     padding-top: 100px;
     text-align: center;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 12px;
-    font-size: initial;
-}
-
-#credit {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 800px;
-}
-
-#credit p {
-    font-weight: bold;
-    align-self: center;
-}
-
 #historia {
     padding: 50px 0;
-    background: linear-gradient(to right, white, #fba6e1);
+    background: linear-gradient(to right, #207ce5, #499bea);
     display: flex;
     justify-content: center;
+}
+
+.content {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #ff0084;
+}
+
+ul {
+    text-align: left;
 }
 
 .white-hr {
@@ -91,11 +76,12 @@ footer {
     border-color: white;
 }
 
-.content {
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
+p {
+    padding-top: 10px;
+}
+
+h4 {
+    padding-top: 20px;
 }
 
 #about {
@@ -110,19 +96,13 @@ footer {
 
 #pricing {
     padding: 50px 0;
-    background: linear-gradient(to right, white, #fba6e1);
+    background: linear-gradient(to right, #207ce5, #499bea);
     display: flex;
     justify-content: center;
 }
 
-.price-container {
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .informacion {
     width: 180px;
-    /* height: 300px; */
     border: 1px solid grey;
     border-radius: 5px;
     background-color: white;
@@ -156,7 +136,6 @@ footer {
     display: inline-block;
     font-size: 16px;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
     transition-duration: 0.4s;
     background-color: white;
     color: black;
@@ -165,18 +144,7 @@ footer {
 
 .price-btn:hover {
     background-color: #ff0084;
-    /* Green */
     color: white;
-}
-
-@media (max-width: 600px) {
-    .price-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .informacion {
-        margin-bottom: 20px;
-    }
 }
 
 #form {
@@ -197,10 +165,33 @@ footer {
     cursor: pointer;
     padding: 10px 32px;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
     transition-duration: 0.4s;
 }
 
 #submit:hover {
     background-color: rgba(203, 96, 179, 1);
+}
+
+.price-container {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+    font-size: initial;
+    color: #499bea;
+}
+
+@media (max-width: 600px) {
+    .price-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .informacion {
+        margin-bottom: 20px;
+    }
 }
