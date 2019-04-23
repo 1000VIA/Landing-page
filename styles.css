@@ -78,6 +78,7 @@ ul {
 
 p {
     padding-top: 10px;
+    font-size: 20px;
 }
 
 h4 {
@@ -124,10 +125,12 @@ h4 {
     flex-direction: column;
     align-items: center;
     line-height: 1.5em;
+    font-size: 20px;
 }
 
 .price-btn {
     margin: 20px 0;
+    margin-top: auto;
     border: none;
     color: white;
     padding: 15px 32px;
